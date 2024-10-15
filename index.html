@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SizonRest - Ресторан</title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="accessibility.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>SizonRest 💎</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="about.html">О ресторане</a></li>
+                <li><a href="news.html">Новости и акции</a></li>
+                <li><a href="reservation.html">Бронирование столика</a></li>
+            </ul>
+        </nav>
+		<button id="accessibility-toggle">Включить режим "Оттенки серого"</button>
+    </header>
+
+    <section class="hero">
+        <h2>Добро пожаловать в SizonRest!</h2>
+        <p>Мы предлагаем лучшие блюда и отличный сервис. Присоединяйтесь к нам для незабываемых впечатлений!</p>
+        <a href="menu.html" class="cta-button">Посмотреть меню</a>
+    </section>
+
+    <section id="menu">
+        <h2>🎁 Популярные блюда</h2>
+        <ul>
+            <li>Паста - 300 руб.</li>
+            <li>Салат Цезарь - 250 руб.</li>
+            <li>Стейк - 800 руб.</li>
+            <li>Десерт - 150 руб.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SizonRest. Все права защищены.</p>
+    </footer>
+	
+	<script>
+    function toggleAccessibility() {
+        document.body.classList.toggle('accessible');
+        const button = document.getElementById('accessibility-toggle');
+        if (document.body.classList.contains('accessible')) {
+            button.textContent = 'Включить режим "Оттенки серого';
+        } else {
+            button.textContent = 'Включить режим "Оттенки серого';
+        }
+    }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
